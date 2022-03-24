@@ -13,7 +13,6 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-
 // 1. create variables to save user input from prompts
 
 //alert, confirm, prompt
@@ -24,13 +23,8 @@ const lowers = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
 const numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 const specials = ['!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '/', ':', ';', '<', '=', '>', '?', '@', '[', ']', '^', '_', '`', '{', '|', '}', '~'];
 
-
-
-
-
 // 2. Create arrays for each type of character.
 //specialCharacters, upperCase, lowerCase, numeric
-
 
 function generatePassword() {
   var special;
@@ -50,8 +44,6 @@ function generatePassword() {
     passlength = parseInt(passlength);
   }
 
-
-
   //specialCharacters boolean
   special = confirm("would you like to use special characters?")
 
@@ -63,9 +55,6 @@ function generatePassword() {
 
   //uppercaseCharacters boolean
   uppercase = confirm("would you like to use uppercase characters?")
-
-
-
 
 // 3. use randomizer function to select characters from each array.
 // 4.generatePassword function -- take user input and pull values at random from arrays.
